@@ -1,0 +1,56 @@
+/** 
+ * palette.css
+ * Base colours use tailwind tint/shade shifting techniques, type colours are 
+ * flat and do not need morphing.
+ */
+
+:root {
+  --cedar-chest-050: #fdf4f3;
+  --cedar-chest-100: #fbe8e5;
+  --cedar-chest-200: #f9d4cf;
+  --cedar-chest-300: #f4b6ad;
+  --cedar-chest-400: #eb8b7e;
+  --cedar-chest-500: #df6554;
+  --cedar-chest-600: #cd5241; /* default */
+  --cedar-chest-700: #aa3a2b;
+  --cedar-chest-800: #8d3327;
+  --cedar-chest-900: #763026;
+  --black-coral-050: #f4f6f7;
+  --black-coral-100: #e2e7eb;
+  --black-coral-200: #c8d2d9;
+  --black-coral-300: #a1b1bf;
+  --black-coral-400: #738a9d;
+  --black-coral-500: #586f82;
+  --black-coral-600: #4c5d6e;
+  --black-coral-700: #465362; /* default */
+  --black-coral-800: #3b444f;
+  --black-coral-900: #3b444f;
+  --light-cornflower-blue-050: #f3f8fc;
+  --light-cornflower-blue-100: #e6f1f8;
+  --light-cornflower-blue-200: #c7e3f0;
+  --light-cornflower-blue-300: #9ed0e6; /* default */
+  --light-cornflower-blue-400: #5db1d3;
+  --light-cornflower-blue-500: #3897bf;
+  --light-cornflower-blue-600: #287aa1;
+  --light-cornflower-blue-700: #216283;
+  --light-cornflower-blue-800: #1f536d;
+  --light-cornflower-blue-900: #1f465b;
+  --type-normal: #aea9a7;
+  --type-fire: #cd6968;
+  --type-water: #94b6db;
+  --type-electric: #ffee93;
+  --type-grass: #8fd694;
+  --type-ice: #c2e0f5;
+  --type-fighting: #d4aa7d;
+  --type-poison: #ab92bf;
+  --type-ground: #efd09e;
+  --type-flying: #c6caed;
+  --type-psychic: #f2b6bb;
+  --type-bug: #d2d8b3;
+  --type-rock: #dcbf85;
+  --type-ghost: #ada8be;
+  --type-dragon: #9292ce;
+  --type-dark: #8a6866;
+  --type-steel: #d1d1d1;
+  --type-fairy: #efbcd5;
+}

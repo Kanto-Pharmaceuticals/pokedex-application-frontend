@@ -1,0 +1,269 @@
+/** 
+ * typography.css
+ * Font-face definitions for local custom fonts, use import statement in react 
+ * for optimized loading 
+ */
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts/sofia-pro/sofia-pro-black-italic.woff2") format("woff2"),
+    url("./fonts/sofia-pro/sofia-pro-black-italic.woff") format("woff"),
+    url("./fonts/sofia-pro/sofia-pro-black-italic.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts/sofia-pro/sofia-pro-black.woff2") format("woff2"),
+    url("./fonts/sofia-pro/sofia-pro-black.woff") format("woff"),
+    url("./fonts/sofia-pro/sofia-pro-black.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts/sofia-pro/sofia-pro-bold-italic.woff2") format("woff2"),
+    url("./fonts/sofia-pro/sofia-pro-bold-italic.woff") format("woff"),
+    url("./fonts/sofia-pro/sofia-pro-bold-italic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts/sofia-pro/sofia-pro-bold.woff2") format("woff2"),
+    url("./fonts/sofia-pro/sofia-pro-bold.woff") format("woff"),
+    url("./fonts/sofia-pro/sofia-pro-bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts/sofia-pro/sofia-pro-semibold-italic.woff2") format("woff2"),
+    url("./fonts/sofia-pro/sofia-pro-semibold-italic.woff") format("woff"),
+    url("./fonts/sofia-pro/sofia-pro-semibold-italic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts/sofia-pro/sofia-pro-semibold.woff2") format("woff2"),
+    url("./fonts/sofia-pro/sofia-pro-semibold.woff") format("woff"),
+    url("./fonts/sofia-pro/sofia-pro-semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts/sofia-pro/sofia-pro-medium-italic.woff2") format("woff2"),
+    url("./fonts/sofia-pro/sofia-pro-medium-italic.woff") format("woff"),
+    url("./fonts/sofia-pro/sofia-pro-medium-italic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts/sofia-pro/sofia-pro-medium.woff2") format("woff2"),
+    url("./fonts/sofia-pro/sofia-pro-medium.woff") format("woff"),
+    url("./fonts/sofia-pro/sofia-pro-medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts/sofia-pro/sofia-pro-regular-italic.woff2") format("woff2"),
+    url("./fonts/sofia-pro/sofia-pro-regular-italic.woff") format("woff"),
+    url("./fonts/sofia-pro/sofia-pro-regular-italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts/sofia-pro/sofia-pro-regular.woff2") format("woff2"),
+    url("./fonts/sofia-pro/sofia-pro-regular.woff") format("woff"),
+    url("./fonts/sofia-pro/sofia-pro-regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts/sofia-pro/sofia-pro-light-italic.woff2") format("woff2"),
+    url("./fonts/sofia-pro/sofia-pro-light-italic.woff") format("woff"),
+    url("./fonts/sofia-pro/sofia-pro-light-italic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts/sofia-pro/sofia-pro-light.woff2") format("woff2"),
+    url("./fonts/sofia-pro/sofia-pro-light.woff") format("woff"),
+    url("./fonts/sofia-pro/sofia-pro-light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: url("./fonts/apercu/apercu-black-italic-pro.woff2") format("woff2"),
+    url("./fonts/apercu/apercu-black-italic-pro.woff") format("woff"),
+    url("./fonts/apercu/apercu-black-italic-pro.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: url("./fonts/apercu/apercu-black-pro.woff2") format("woff2"),
+    url("./fonts/apercu/apercu-black-pro.woff") format("woff"),
+    url("./fonts/apercu/apercu-black-pro.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: url("./fonts/apercu/apercu-extrabold-italic-pro.woff2") format("woff2"),
+    url("./fonts/apercu/apercu-extrabold-italic-pro.woff") format("woff"),
+    url("./fonts/apercu/apercu-extrabold-italic-pro.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: url("./fonts/apercu/apercu-extrabold-pro.woff2") format("woff2"),
+    url("./fonts/apercu/apercu-extrabold-pro.woff") format("woff"),
+    url("./fonts/apercu/apercu-extrabold-pro.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: url("./fonts/apercu/apercu-bold-italic-pro.woff2") format("woff2"),
+    url("./fonts/apercu/apercu-bold-italic-pro.woff") format("woff"),
+    url("./fonts/apercu/apercu-bold-italic-pro.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: url("./fonts/apercu/apercu-bold-pro.woff2") format("woff2"),
+    url("./fonts/apercu/apercu-bold-pro.woff") format("woff"),
+    url("./fonts/apercu/apercu-bold-pro.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: url("./fonts/apercu/apercu-medium-italic-pro.woff2") format("woff2"),
+    url("./fonts/apercu/apercu-medium-italic-pro.woff") format("woff"),
+    url("./fonts/apercu/apercu-medium-italic-pro.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: url("./fonts/apercu/apercu-medium-pro.woff2") format("woff2"),
+    url("./fonts/apercu/apercu-medium-pro.woff") format("woff"),
+    url("./fonts/apercu/apercu-medium-pro.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Apercu Mono";
+  src: url("./fonts/apercu/apercu-mono-bold-pro.woff2") format("woff2"),
+    url("./fonts/apercu/apercu-mono-bold-pro.woff") format("woff"),
+    url("./fonts/apercu/apercu-mono-bold-pro.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Apercu Mono";
+  src: url("./fonts/apercu/apercu-mono-medium-pro.woff2") format("woff2"),
+    url("./fonts/apercu/apercu-mono-medium-pro.woff") format("woff"),
+    url("./fonts/apercu/apercu-mono-medium-pro.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Apercu Mono";
+  src: url("./fonts/apercu/apercu-mono-regular-pro.woff2") format("woff2"),
+    url("./fonts/apercu/apercu-mono-regular-pro.woff") format("woff"),
+    url("./fonts/apercu/apercu-mono-regular-pro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Apercu Mono";
+  src: url("./fonts/apercu/apercu-mono-light-pro.woff2") format("woff2"),
+    url("./fonts/apercu/apercu-mono-light-pro.woff") format("woff"),
+    url("./fonts/apercu/apercu-mono-light-pro.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+}
