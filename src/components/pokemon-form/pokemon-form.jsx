@@ -3,15 +3,15 @@ import { useDispatch } from "react-redux"
 import { createPokemon } from "../../features/pokemon/pokemonSlice"
 
 const PokemonForm = () => {
-  const [text, setText] = useState("")
+  const [name, setName] = useState("")
 
   const dispatch = useDispatch()
 
   const onSubmit = e => {
     e.preventDefault()
 
-    dispatch(createPokemon({ text }))
-    setText("")
+    dispatch(createPokemon({ name }))
+    setName("")
   }
 
   return (
@@ -21,10 +21,10 @@ const PokemonForm = () => {
           <label htmlFor="text">Pokemon</label>
           <input
             type="text"
-            name="text"
-            id="text"
-            value={text}
-            onChange={e => setText(e.target.value)}
+            name="name"
+            id="name"
+            value={name}
+            onChange={e => setName(e.target.value)}
           />
         </div>
         <div className="form-group">

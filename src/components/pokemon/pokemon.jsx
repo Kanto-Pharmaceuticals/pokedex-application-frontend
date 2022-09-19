@@ -6,7 +6,7 @@ const Pokemon = ({ pokemon }) => {
   return (
     <div className="pokemon">
       <div>{new Date(pokemon.createdAt).toLocaleString("en-US")}</div>
-      <h2>{pokemon.text}</h2>
+      <h2>{pokemon.name}</h2>
       <button
         onClick={() => dispatch(deletePokemon(pokemon._id))}
         className="close"
