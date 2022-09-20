@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux"
-import { deletePokemon } from "../../features/pokemon/pokemonSlice"
+import { deletePokemon } from "../../features/pokemon/pokemon-slice"
 
 const Pokemon = ({ pokemon }) => {
   const dispatch = useDispatch()

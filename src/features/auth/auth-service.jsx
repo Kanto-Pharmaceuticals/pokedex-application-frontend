@@ -1,10 +1,10 @@
 import axios from "axios"
 
-const API_URL = "/api/trainers/"
+const TRAINER_API = "/api/trainers/"
 
 // registers user
 const register = async trainerData => {
-  const response = await axios.post(API_URL, trainerData)
+  const response = await axios.post(TRAINER_API, trainerData)
 
   if (response.data) {
     localStorage.setItem("trainer", JSON.stringify(response.data))
@@ -15,7 +15,7 @@ const register = async trainerData => {
 
 // logs in user
 const login = async trainerData => {
-  const response = await axios.post(API_URL + "login", trainerData)
+  const response = await axios.post(TRAINER_API + "login", trainerData)
 
   if (response.data) {
     localStorage.setItem("trainer", JSON.stringify(response.data))

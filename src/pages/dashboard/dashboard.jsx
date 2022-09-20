@@ -4,8 +4,8 @@ import { useSelector, useDispatch } from "react-redux"
 import PokemonForm from "../../components/pokemon-form"
 import PokemonItem from "../../components/pokemon"
 import Spinner from "../../components/spinner"
-import { reset } from "../../features/auth/authSlice"
-import { getPokemon } from "../../features/pokemon/pokemonSlice"
+import { reset } from "../../features/auth/auth-slice"
+import { getPokemon } from "../../features/pokemon/pokemon-slice"
 
 const Dashboard = () => {
   const navigate = useNavigate()

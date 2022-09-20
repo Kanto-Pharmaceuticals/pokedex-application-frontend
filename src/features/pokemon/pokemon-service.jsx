@@ -1,7 +1,7 @@
 import axios from "axios"
 import pokemon from "../../components/pokemon"
 
-const API_URL = "/api/pokemon/"
+const TRAINER_API = "/api/pokemon/"
 
 // creates new pokemon
 const createPokemon = async (pokemonData, token) => {
@@ -11,7 +11,7 @@ const createPokemon = async (pokemonData, token) => {
     },
   }
 
-  const response = await axios.post(API_URL, pokemonData, config)
+  const response = await axios.post(TRAINER_API, pokemonData, config)
 
   return response.data
 }
@@ -24,7 +24,7 @@ const getPokemon = async token => {
     },
   }
 
-  const response = await axios.get(API_URL, config)
+  const response = await axios.get(TRAINER_API, config)
 
   return response.data.pokemon
 }
@@ -37,7 +37,7 @@ const deletePokemon = async (pokemonId, token) => {
     },
   }
 
-  const response = await axios.delete(API_URL + pokemonId, config)
+  const response = await axios.delete(TRAINER_API + pokemonId, config)
 
   return response.data
 }

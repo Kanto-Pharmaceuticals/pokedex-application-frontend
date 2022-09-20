@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit"
-import pokemonService from "./pokemonService"
+import pokemonService from "./pokemon-service"
 
 const initialState = {
   pokemon: [],

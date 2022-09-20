@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useDispatch } from "react-redux"
-import { createPokemon } from "../../features/pokemon/pokemonSlice"
+import { createPokemon } from "../../features/pokemon/pokemon-slice"
 
 const PokemonForm = () => {
   const [name, setName] = useState("")
