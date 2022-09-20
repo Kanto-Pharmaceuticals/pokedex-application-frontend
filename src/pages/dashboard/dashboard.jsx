@@ -6,6 +6,7 @@ import PokemonItem from "../../components/pokemon"
 import Spinner from "../../components/spinner"
 import { reset } from "../../features/auth/auth-slice"
 import { getPokemon } from "../../features/pokemon/pokemon-slice"
+import { retrievePokemon } from "../../features/pokedex/pokedex-pokemon-slice"
 
 const Dashboard = () => {
   const navigate = useNavigate()
@@ -13,7 +14,7 @@ const Dashboard = () => {
 
   const { trainer } = useSelector(state => state.auth)
   const { pokemon, isLoading, isError, message } = useSelector(
-    state => state.pokemon
+    state => state.caught
   )
 
   useEffect(() => {
@@ -23,6 +24,7 @@ const Dashboard = () => {
     if (!trainer) {
       navigate("/login")
     }
+    dispatch(retrievePokemon())
     dispatch(getPokemon())
     return () => {
       dispatch(reset())

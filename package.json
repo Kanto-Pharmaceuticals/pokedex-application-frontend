@@ -12,6 +12,7 @@
     "@testing-library/react": "^13.0.1",
     "@testing-library/user-event": "^14.1.1",
     "axios": "^0.27.2",
+    "dotenv": "^16.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-feather": "^2.0.10",
