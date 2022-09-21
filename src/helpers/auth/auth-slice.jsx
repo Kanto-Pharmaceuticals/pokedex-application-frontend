@@ -1,3 +1,8 @@
+/**
+ * auth-slice.jsx
+ * Defines the state slice of auth for trainer authentication.
+ */
+
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit"
 import authService from "./auth-service"
 
