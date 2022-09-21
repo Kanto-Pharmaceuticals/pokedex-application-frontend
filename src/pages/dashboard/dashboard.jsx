@@ -4,9 +4,9 @@ import { useSelector, useDispatch } from "react-redux"
 import PokemonForm from "../../components/pokemon-form"
 import PokemonItem from "../../components/pokemon"
 import Spinner from "../../components/spinner"
-import { reset } from "../../features/auth/auth-slice"
-import { getPokemon } from "../../features/pokemon/pokemon-slice"
-import { retrievePokemon } from "../../features/pokedex/pokedex-pokemon-slice"
+import { reset } from "../../helpers/auth/auth-slice"
+import { getPokemon } from "../../helpers/pokemon/pokemon-slice"
+import { retrievePokemon } from "../../helpers/pokedex/pokedex-pokemon-slice"
 
 const Dashboard = () => {
   const navigate = useNavigate()

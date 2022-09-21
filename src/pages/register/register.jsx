@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom"
 import { toast } from "react-toastify"
 import { UserPlus } from "react-feather"
-import { register, reset } from "../../features/auth/auth-slice"
+import { register, reset } from "../../helpers/auth/auth-slice"
 import Spinner from "../../components/spinner"
 
 const Register = () => {
