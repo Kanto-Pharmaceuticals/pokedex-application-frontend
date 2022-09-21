@@ -1,0 +1,47 @@
+/** 
+ * header.scss 
+ * Styles the header component.
+ */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--size-9);
+  background-color: var(--color-body);
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-top: calc(var(--responsive-padding-large) * 2);
+  padding: var(--responsive-padding-large) 0;
+  column-gap: var(--spacing-3);
+  transition: top 0.3s linear;
+}
+.header-hide {
+  top: calc(var(--size-9) * -1);
+}
+.header-trainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 var(--responsive-padding-large);
+}
+.header-trainer-name {
+  font-family: var(--font-sans-alt);
+  font-weight: var(--font-extrabold);
+  font-size: var(--font-s);
+}
+.header-trainer-role {
+  font-size: var(--font-xs);
+  line-height: var(--leading-none);
+}
+.header-trainer-name::after {
+  content: "";
+  display: inline-block;
+  margin: auto var(--spacing-3);
+  background-color: var(--color-primary);
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  vertical-align: middle;
+}

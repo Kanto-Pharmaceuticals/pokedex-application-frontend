@@ -25,5 +25,5 @@ export const uiSlice = createSlice({
   },
 })
 
-export const { menuToggle } = uiSlice.actions
+export const { menuToggle, navbarToggle } = uiSlice.actions
 export default uiSlice.reducer

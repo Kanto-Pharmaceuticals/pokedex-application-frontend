@@ -1,0 +1,78 @@
+/** 
+ * navbar.scss 
+ * Styles the navbar component.
+ */
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--size-9);
+  background-color: var(--color-body);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: var(--responsive-padding-large);
+  column-gap: var(--spacing-3);
+  transition: bottom 0.3s linear;
+}
+.navigation-hide {
+  bottom: calc(var(--size-9) * -1);
+}
+.brand-name {
+  display: flex;
+  width: 100%;
+  padding: var(--spacing-3) 0;
+  align-items: center;
+  justify-content: left;
+}
+.brand-logo {
+  height: var(--size-3);
+  display: block;
+}
+.navigation-button {
+  -webkit-tap-highlight-color: transparent;
+  border: 0; // removes default border on button element
+  display: flex;
+  margin: auto 0;
+  cursor: pointer;
+  color: var(--color-text);
+  padding: var(--spacing-3);
+  column-gap: var(--spacing-3);
+  align-items: center;
+  font-family: var(--font-sans-alt);
+  font-weight: var(--font-extrabold);
+  border-radius: var(--radius-s);
+  span {
+    margin: auto;
+    display: none;
+  }
+}
+.navigation-fullmark {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation-button {
+    span {
+      display: block;
+      word-wrap: none;
+      white-space: pre;
+    }
+  }
+  .navigation-fullmark {
+    display: block;
+  }
+  .navigation-wordmark {
+    display: none;
+  }
+  .brand-name {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navigation-center {
+    flex-direction: row-reverse;
+  }
+}
