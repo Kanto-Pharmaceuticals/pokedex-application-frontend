@@ -1,0 +1,9 @@
+.entry-header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: var(--spacing-3);
+}
+.entry-name {
+  text-transform: capitalize;
+}

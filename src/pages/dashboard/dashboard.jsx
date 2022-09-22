@@ -6,8 +6,7 @@ import PokemonItem from "../../components/pokemon"
 import Spinner from "../../components/spinner"
 import { reset } from "../../helpers/auth/auth-slice"
 import { getPokemon } from "../../helpers/pokemon/pokemon-slice"
-import { retrievePokemon } from "../../helpers/pokedex/pokedex-species-slice"
-import pokedexSpeciesEntryService from "../../helpers/pokedex/pokedex-species-entry-service"
+import { retrieveSpecies } from "../../helpers/pokedex/pokedex-slice"
 
 const Dashboard = () => {
   const navigate = useNavigate()
@@ -25,7 +24,7 @@ const Dashboard = () => {
     if (!trainer) {
       navigate("/login")
     }
-    dispatch(retrievePokemon())
+    dispatch(retrieveSpecies())
     dispatch(getPokemon())
     return () => {
       dispatch(reset())

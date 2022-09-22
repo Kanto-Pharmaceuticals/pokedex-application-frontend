@@ -1,0 +1,8 @@
+.search-item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  span {
+    display: inline-block;
+  }
+}

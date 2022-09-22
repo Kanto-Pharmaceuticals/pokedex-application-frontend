@@ -7,6 +7,7 @@ import Dashboard from "./pages/dashboard"
 import Login from "./pages/login/login"
 import Register from "./pages/register"
 import Search from "./pages/search"
+import Entry from "./pages/entry"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
               <Route path="/search" element={<Search />} />
+              <Route path="/entry" element={<Entry />} />
             </Routes>
           </div>
         </div>

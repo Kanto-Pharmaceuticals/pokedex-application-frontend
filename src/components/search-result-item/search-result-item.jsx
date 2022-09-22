@@ -36,8 +36,10 @@ const SearchResultItem = ({ hit, attribute }) => {
       ? hit.item
       : resolveAttribute(hit.item, attribute)
   return highlight(
-    matches?.value.toLowerCase().charAt(0).toUpperCase() +
-      matches?.value.slice(1) || fallback,
+    (
+      matches?.value.toLowerCase().charAt(0).toUpperCase() +
+      matches?.value.slice(1)
+    ).replace(/-/g, " ") || fallback,
     matches?.indices
   )
 }
