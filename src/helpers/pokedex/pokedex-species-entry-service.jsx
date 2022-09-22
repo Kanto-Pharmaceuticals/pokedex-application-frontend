@@ -10,7 +10,7 @@ const API_APPEND = "pokemon-species/"
 
 const retrieveSpecies = async ({ query }) => {
   const response = await axios.get(
-    `${process.env.REACT_APP_POKE_API}` + API_APPEND + query
+    `${process.env.REACT_APP_POKE_API}` + API_APPEND + `${query}`
   )
   if (response.data) {
     return response.data.results

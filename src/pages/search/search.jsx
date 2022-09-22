@@ -20,21 +20,18 @@ const Search = () => {
 
   // set the current state for reference
   const { trainer } = useSelector(state => state.auth)
-  const { pokemon } = useSelector(state => state.pokedex)
+  const { species } = useSelector(state => state.pokedex)
   const { searchQuery } = useSelector(state => state.ui)
 
   // fusejs fuzzy search
-  const fuse = new Fuse(pokemon, {
+  const fuse = new Fuse(species, {
     keys: ["name"],
     isCaseSensitive: true,
     includeMatches: true,
     minMatchCharLength: 2,
     threshold: 0.4,
   })
-  const fuseFilter =
-    searchQuery === ""
-      ? fuse._docs.map(item => ({ item, matches: [], score: 1 }))
-      : fuse.search(searchQuery)
+  const fuseFilter = fuse.search(searchQuery)
 
   // search should be available only to registered trainers
   useEffect(() => {

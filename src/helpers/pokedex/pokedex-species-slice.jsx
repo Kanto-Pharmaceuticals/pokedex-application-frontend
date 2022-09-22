@@ -8,7 +8,7 @@ import pokedexPokemonService from "./pokedex-species-service"
 
 // sets the initial state on load
 const initialState = {
-  pokemon: [],
+  species: [],
   isError: false,
   isSuccess: false,
   isLoading: false,
@@ -48,13 +48,13 @@ export const pokedexPokemonSlice = createSlice({
       .addCase(retrievePokemon.fulfilled, (state, action) => {
         state.isLoading = false
         state.isSuccess = true
-        state.pokemon = action.payload
+        state.species = action.payload
       })
       .addCase(retrievePokemon.rejected, (state, action) => {
         state.isLoading = false
         state.isError = true
         state.message = action.payload
-        state.pokemon = null
+        state.species = null
       })
   },
 })
