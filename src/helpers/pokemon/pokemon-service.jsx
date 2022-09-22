@@ -1,5 +1,4 @@
 import axios from "axios"
-import pokemon from "../../components/pokemon"
 
 const TRAINER_API = "/api/pokemon/"
 

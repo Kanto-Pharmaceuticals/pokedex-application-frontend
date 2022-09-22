@@ -7,7 +7,7 @@
 import axios from "axios"
 
 // append this to the end of the API secret
-const API_APPEND = "pokemon-species/?limit=10000"
+const API_APPEND = "pokemon/?limit=10000"
 
 // retrieves all of the pokemon in the self-hosted PokeAPI database
 const retrievePokemon = async () => {

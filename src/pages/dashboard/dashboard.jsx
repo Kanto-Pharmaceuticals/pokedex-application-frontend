@@ -6,7 +6,7 @@ import PokemonItem from "../../components/pokemon"
 import Spinner from "../../components/spinner"
 import { reset } from "../../helpers/auth/auth-slice"
 import { getPokemon } from "../../helpers/pokemon/pokemon-slice"
-import { retrievePokemon } from "../../helpers/pokedex/pokedex-pokemon-slice"
+import { retrievePokemon } from "../../helpers/pokedex/pokedex-species-slice"
 
 const Dashboard = () => {
   const navigate = useNavigate()

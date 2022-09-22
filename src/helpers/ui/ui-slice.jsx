@@ -2,6 +2,8 @@
  * ui-slice.jsx
  * Defines the state slice of ui for sharing state of ui components at the
  * global level without the complexity of liftin up state.
+ * References:
+ * - https://www.softkraft.co/how-to-setup-redux-with-redux-toolkit/
  */
 
 import { createSlice } from "@reduxjs/toolkit"
@@ -11,6 +13,7 @@ import { createSlice } from "@reduxjs/toolkit"
 // sets the initial ui state on load
 const initialState = {
   isMenuToggled: false,
+  searchQuery: "",
 }
 
 // creates a slice for auth and declares a reducer function to reset to initial
@@ -22,8 +25,12 @@ export const uiSlice = createSlice({
       state.isMenuToggled = !state.isMenuToggled
       localStorage.setItem("ui", JSON.stringify(state))
     },
+    setSearchQuery: (state, query) => {
+      state.searchQuery = `${query.payload}`
+      localStorage.setItem("ui", JSON.stringify(state))
+    },
   },
 })
 
-export const { menuToggle, navbarToggle } = uiSlice.actions
+export const { menuToggle, setSearchQuery } = uiSlice.actions
 export default uiSlice.reducer

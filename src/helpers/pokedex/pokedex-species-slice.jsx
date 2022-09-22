@@ -4,7 +4,7 @@
  */
 
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit"
-import pokedexPokemonService from "./pokedex-pokemon-service"
+import pokedexPokemonService from "./pokedex-species-service"
 
 // sets the initial state on load
 const initialState = {

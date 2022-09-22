@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"
 import { motion } from "framer-motion"
 import { Menu, Home, BookOpen, Search, LogIn, LogOut } from "react-feather"
 import { logout, reset } from "../../helpers/auth/auth-slice"
-import { menuToggle, navbarToggle } from "../../helpers/ui/ui-slice"
+import { menuToggle } from "../../helpers/ui/ui-slice"
 import { debounce } from "../../helpers/debouce"
 import "./navbar.scss"
 
@@ -12,7 +12,6 @@ const Navbar = props => {
   const navigate = useNavigate()
   const dispatch = useDispatch()
   const { trainer } = useSelector(state => state.auth)
-  const { ui } = useSelector(state => state.ui)
   const [prevScrollPos, setPrevScrollPos] = useState(0)
   const [visible, setVisible] = useState(true)
 
@@ -209,7 +208,7 @@ const Navbar = props => {
         <motion.button
           aria-label="Log out button"
           className="navigation-button"
-          onClick={() => dispatch(logout())}
+          onClick={onLogout}
           initial={{
             backgroundColor: "var(--color-white)",
             color: "var(--color-text)",
